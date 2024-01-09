@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Portfolio/style.css' %}">
+    <title>Website Portfolio</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="Image1">
+        <img src="{% static 'Portfolio/img1.jpg' %}" alt="pinkShirt">
+    </div>
+
+    <div class="base-content">
+        <h1>Discovering the next stage of an <br> Information Technology Student</h1>
+        <a href="home/">Home</a>
+    </div>
+
+    <div class="Image2">
+        <img src="{% static 'Portfolio/img2.jpg' %}" alt="pinkShirt">
+    </div>
+</div>
+
+{% block about %}
+{% endblock %}
+
+</body>
+</html>

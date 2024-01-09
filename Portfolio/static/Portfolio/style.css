@@ -1,0 +1,797 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* STYLE FOR HOME.HTML */
+
+body {
+    background: #081b29;
+    color: white;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: #05121b;
+    z-index: 1;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.logo:hover{
+    color: #00abf0;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.navbar a{
+    font-size: 20px;
+    font-weight: 550;
+    text-decoration: none;
+    color: white;
+    margin-left: 80px;
+    transition: 0.4s;
+}
+
+.navbar a:hover{
+    color: #00abf0;
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.8s;
+    z-index: 1;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+
+
+.image-container {
+    width: 50%;
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+    background-color: #081b29; 
+    margin-left: 10%;
+    background: linear-gradient(45deg, #023144, #0e2e46);
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+.image-container img {
+    width: 96%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; 
+    transition: opacity 1.2s ease-in-out;
+}
+
+
+.image-container:hover img {
+    opacity: 0.7;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.8s;
+    z-index: 2;
+}
+
+.content{
+    padding-bottom: 10%;
+    max-width: 700px;
+}
+
+.content h1{
+    position: relative;
+    font-size: 60px;
+}
+
+.content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.7s;
+}
+
+.content h3{
+    position: relative;
+    font-size: 30px;
+    color: #00abf0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.content p{
+    position: relative;
+    font-size: 20px;
+}
+
+.content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.3s;
+}
+
+.content a button{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    width: 180px;
+    height: 50px;
+    background: #fcfcfc;
+    border: 2px solid #081b29;
+    border-radius: 12px;
+    color: black;
+    margin-top: 5%;
+    transition: background 0.5s;
+}
+
+.content a button:hover {
+    background: #00abf0;
+}
+
+.content a button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.3s;
+}
+
+.socmed-links{
+    position: absolute;
+    bottom: 40px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socmed-links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3.2s;
+    z-index: 2;
+}
+
+.socmed-links a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+
+.socmed-links a:hover{
+    color: white;
+}
+
+.email {
+    position: relative;
+    font-size: 14px; 
+    color: white;
+    text-decoration: none;
+    display: flex; 
+    align-items: center; 
+    margin-left: 5%;
+}
+
+.email::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3.2s;
+    z-index: 2;
+}
+/* END OF STYLES FOR HOME.HTML */
+
+/* STYLES FOR BASE.HTML */
+
+.base-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    line-height: 1.2;
+}
+
+.base-content a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.4s;
+    z-index: 2;
+}
+
+.base-content a {
+    position: relative;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    background: white;
+    border: 2px solid #081b29;
+    border-radius: 8px;
+    color: black;
+    letter-spacing: 1px;
+    margin-top: 2%;
+    transition: background 0.5s;
+}
+
+
+.base-content a:hover {
+    background: #00abf0;
+}
+
+.base-content {
+    flex: 2;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+}
+
+.Image1 {
+    flex: 1;
+}
+
+.Image1 img{
+    width: 100%;
+    margin: 25%;
+    border-radius: 5%;
+    float: left;
+    object-fit: cover;
+
+    animation-name: downToOriginal;
+    animation-duration: 2s;
+    transition: ease-in-out;
+    transition-duration: 0.3s ;
+}
+
+.Image1 img:hover{
+    transform: translateY(-50px);
+}
+
+.Image2 {
+    flex: 1;
+}
+
+.Image2 img{
+    width: 100%;
+    margin: 25%;
+    border-radius: 5%;
+    float: right;
+    object-fit: cover;
+
+    animation-name: upToOriginal;
+    animation-duration: 2s;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.Image2 img:hover{
+    transform: translateY(-50px);
+}
+
+/* END OF STYLES FOR BASE.HTML */
+
+/* START OF STYLES FOR PROJECT TAB */
+
+.projectTitle{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 150%;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.projectTitle h1 {
+    color: white;
+    margin-top: 8%;
+}
+
+.projectTitle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.thesisProject{
+    position: relative;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.thesisProject p{
+    color: white;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    font-size: 125%;
+}
+
+.thesisProject::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: 1.8s;
+}
+
+.thesisImages{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.4s ease-in-out;
+}
+
+.thesisImages img{
+    width: 28%;
+    height: 15%;
+    border: 2px solid;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px 0px;
+    margin: 0.5%;
+    transition: 400ms;
+}
+
+.thesisImages img:hover{
+    transform: scale(1.2);
+}
+
+.thesisImages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: 2.5s;
+}
+
+.projectPortfolioIntro{
+    position: relative;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.projectPortfolioIntro p{
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    font-size: 125%;
+}
+
+.projectPortfolioIntro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: 3.2s;
+}
+
+.projectPortfolioImages{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.4s ease-in-out;
+}
+
+.projectPortfolioImages img{
+    width: 50%;
+    height: 60%;
+    border: 2px solid;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px 0px;
+    margin: 0.5%;
+    transition: 400ms;
+}
+
+.projectPortfolioImages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: 3.9s;
+}
+
+.ProjectDBIntro{
+    position: relative;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.ProjectDBIntro p{
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    font-size: 125%;
+}
+
+.ProjectDBIntro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 4s ease forwards;
+    animation-delay: 4.6s;
+}
+
+.ProjectDBImages{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.4s ease-in-out;
+}
+
+.ProjectDBImages img{
+    width: 28%;
+    height: 15%;
+    border: 2px solid;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px 0px;
+    margin: 0.5%;
+    transition: 400ms;
+}
+
+.ProjectDBImages img:hover{
+    transform: scale(1.2);
+}
+
+.ProjectDBImages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: 5.3s;
+}
+
+.projectAnimation{
+    position: relative;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.projectAnimation p{
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    font-size: 125%;
+}
+
+.projectAnimation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 4s ease forwards;
+    animation-delay: 6s;
+}
+
+.projectAnimationImages{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.4s ease-in-out;
+}
+
+.projectAnimationImages img{
+    width: 28%;
+    height: 15%;
+    border: 2px solid;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px 0px;
+    margin: 0.5%;
+    transition: 400ms;
+}
+
+.projectAnimationImages img:hover{
+    transform: scale(1.2);
+}
+
+.projectAnimationImages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: 6.7s;
+}
+
+.projectGameDev{
+    position: relative;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.projectGameDev p{
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    font-size: 125%;
+}
+
+.projectGameDev::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 4s ease forwards;
+    animation-delay: 7.4s;
+}
+
+.projectGameDevImages{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.4s ease-in-out;
+}
+
+.projectGameDevImages img{
+    width: 50%;
+    height: 60%;
+    border: 2px solid;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px 0px;
+    margin: 0.5%;
+    transition: 400ms;
+}
+
+.projectGameDevImages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: 8.1s;
+}
+
+.projectCRUDApi{
+    position: relative;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.projectCRUDApi p{
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    font-size: 125%;
+}
+
+.projectCRUDApi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 4s ease forwards;
+    animation-delay: 8.8s;
+}
+
+.projectCRUDApiImages{
+    margin-bottom: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.4s ease-in-out;
+}
+
+.projectCRUDApiImages img{
+    width: 28%;
+    height: 15%;
+    border: 2px solid;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px 0px;
+    margin: 0.5%;
+    transition: 400ms;
+}
+
+.projectCRUDApiImages img:hover{
+    transform: scale(1.2);
+}
+
+.projectCRUDApiImages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: 9.5s;
+}
+
+
+
+
+/* animation part to */
+@keyframes showRight{
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes downToOriginal{
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes upToOriginal{
+    from {
+        transform: translateY(-1000px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+

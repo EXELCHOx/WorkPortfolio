@@ -1,0 +1,84 @@
+{% extends 'Portfolio/home.html' %}
+{% load static %}
+
+{% block additional_content %}
+    <div class="projectTitle">
+        <h1>These are some of my projects</h1>
+    </div>
+
+    <div class="thesisProject">
+        <p>We developed a web-based system that we called "aQR-IT". It has various uses but one of its main feature is that 
+            it records the number of users of the computers for <br> preventive maintenance.
+        </p>
+    </div>
+
+    <div class="thesisImages">
+        <img src="{% static 'Portfolio/thesis1.png' %}" alt="thesis1">
+        <img src="{% static 'Portfolio/thesis2.png' %}" alt="thesis2">
+        <img src="{% static 'Portfolio/thesis3.png' %}" alt="thesis3">
+        <img src="{% static 'Portfolio/thesis4.png' %}" alt="thesis4">
+        <img src="{% static 'Portfolio/thesis5.png' %}" alt="thesis5">
+        <img src="{% static 'Portfolio/thesis6.png' %}" alt="thesis6">
+    </div>
+
+
+
+    <div class="projectPortfolioIntro">
+        <p>We had a project and was tasked to create a simple portfolio using django framework with python, html, and css as the main languages.</p>
+    </div>
+    
+    <div class="projectPortfolioImages">
+        <img src="{% static 'Portfolio/portfolioProject.png' %}" alt="portfolioPorject">
+    </div>
+
+
+    <div class="ProjectDBIntro">
+        <p>The use of microsoft access for introduction to database and data handling.</p>
+    </div>
+
+    <div class="ProjectDBImages">
+        <img src="{% static 'Portfolio/MicrosoftAccessDB1.png' %}" alt="MSACCESS">
+        <img src="{% static 'Portfolio/MicrosoftAccessDB2.png' %}" alt="MSACCESS">
+        <img src="{% static 'Portfolio/MicrosoftAccessDB3.png' %}" alt="MSACCESS">
+    </div>
+
+    <div class="projectAnimation">
+        <p> Animation using adobe flash.</p>
+    </div>
+
+    <div class="projectAnimationImages">
+        <img src="{% static 'Portfolio/animation1.png' %}" alt="Animation">
+        <img src="{% static 'Portfolio/animation2.png' %}" alt="Animation">
+        <img src="{% static 'Portfolio/animation3.png' %}" alt="Animation">
+        <img src="{% static 'Portfolio/animation4.png' %}" alt="Animation">
+        <img src="{% static 'Portfolio/animation5.png' %}" alt="Animation">
+        <img src="{% static 'Portfolio/animation6.png' %}" alt="Animation">
+    </div>
+
+    <div class="projectGameDev">
+        <p> A simple game created using unity for assets and objects and c# as programming language for functionalities.</p>
+    </div>
+
+    <div class="projectGameDevImages">
+        <img src="{% static 'Portfolio/gameDev1.png' %}" alt="GameDev">
+    </div>
+
+    <div class="projectCRUDApi">
+        <p> A project created using django framework with python, html, and css as the programming languages. It is a CRUD project using API that we also developed. 
+            The project is called <br> "Staff Management System" and it simply Create, Read, Update, and Delete staffs from the record. Database is also included and created 
+            a superuser for login purposes.
+        </p>
+    </div>
+
+    <div class="projectCRUDApiImages">
+        <img src="{% static 'Portfolio/CRUDApi1.png' %}" alt="CRUDApi">
+        <img src="{% static 'Portfolio/CRUDApi2.png' %}" alt="CRUDApi">
+        <img src="{% static 'Portfolio/CRUDApi3.png' %}" alt="CRUDApi">
+        <img src="{% static 'Portfolio/CRUDApi4.png' %}" alt="CRUDApi">
+        <img src="{% static 'Portfolio/CRUDApi5.png' %}" alt="CRUDApi">
+        <img src="{% static 'Portfolio/CRUDApi6.png' %}" alt="CRUDApi">
+    </div>
+
+{% endblock %}
+</body>
+</html>

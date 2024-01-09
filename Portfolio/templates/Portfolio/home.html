@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Portfolio/style.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Website Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="{% url 'base' %}" class="logo">JCristobal.</a>
+        <nav class="navbar">
+            <a href="{% url 'home' %}" class="active">Home</a>
+            <a href="{% url 'projects' %}" class="Buttons">Projects</a> 
+        </nav>
+    </header>
+
+    {% block additional_content %}
+
+    <section class="home">
+        <div class="content">
+            <h1>Hi! I'm Jericho Cristobal</h1>
+            <h3>Information Technology Student</h3>
+            <p>Seeking an entry level position as an Information Technology student looking for growth and learning while utilizing knowledge and skills 
+            learned during the study period.</p>
+            <a href="https://drive.google.com/file/d/1kBPvmodkyzFAlbGd2c8-AtCTV3yHE-ZO/view?usp=sharing" download="CRISTOBALCV.pdf">
+                <button>Download CV</button>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <img src="{% static 'Portfolio/echojpeg.gif' %}" alt="Circular Image">
+        </div>
+
+        <div class="socmed-links">
+            <a href="https://www.facebook.com/JerichoEatsALot"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/xselko_/"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.linkedin.com/in/jericho-paolo-alfonso-cristobal-7ab18723a/?originalSubdomain=ph"><i class='bx bxl-linkedin-square' ></i></a>
+            <p class="email">Email: Jerichocristobalx@gmail.com</p>
+        </div>
+        
+  
+
+
+    </section>
+
+    {% endblock %}
+</body>
+</html>
