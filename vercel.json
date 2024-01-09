@@ -1,5 +1,13 @@
 {
-    "version": 2,
-    "builds": [{ "src": "WorkPortfolio/**", "use": "@vercel/python" }],
-    "routes": [{ "src": "/(.*)", "dest": "WorkPortfolio/wsgi.py" }]
+    "builds": [{
+        "src": "workportfolio/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "workportfolio/wsgi.py"
+        }
+    ]
 }
