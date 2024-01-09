@@ -1,6 +1,12 @@
 {
-    "version": 2,
-    "builds": [{ "src": "WorkPortfolio/**", "use": "@vercel/python" }],
-    "routes": [{ "src": "/(.*)", "dest": "WorkPortfolio/wsgi.py" }]
-  }
-  
+    "builds": [{
+        "src": "/",
+        "use": "/"
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
+}
